@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Hero } from '../components/Hero';
 import { VKLogo } from '../components/VKLogo';
-import { JEWELLERY_PRODUCTS, GOLD_RATES, SHOWROOM_CONTACTS, JewelleryItem } from '../data/jewelleryData';
+import { JEWELLERY_PRODUCTS, GOLD_RATES, SHOWROOM_CONTACTS, JewelleryItem, JEWELLERY_IMAGES } from '../data/jewelleryData';
 import { ArrowRight, Sparkles, ShieldCheck, Heart, Eye, TrendingUp, Phone, MapPin } from 'lucide-react';
 
 interface HomePageProps {
@@ -232,7 +232,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="lg:col-span-6">
               <div className="relative rounded-2xl overflow-hidden border border-[#4d3d1f] shadow-2xl">
                 <img
-                  src="/src/assets/images/bridal_choker_set_1791285138342.jpg"
+                  src={JEWELLERY_IMAGES.choker}
                   alt="VK Jewellers Royal Bridal Set"
                   referrerPolicy="no-referrer"
                   className="w-full h-80 object-cover object-center"

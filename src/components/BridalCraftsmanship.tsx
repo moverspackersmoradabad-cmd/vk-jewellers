@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sparkles, Shield, Gem, CheckCircle2, MessageCircle } from 'lucide-react';
-import { SHOWROOM_CONTACTS } from '../data/jewelleryData';
+import { SHOWROOM_CONTACTS, JEWELLERY_IMAGES } from '../data/jewelleryData';
 
 interface BridalCraftsmanshipProps {
   onBookConsultation: () => void;
@@ -108,7 +108,7 @@ export const BridalCraftsmanship: React.FC<BridalCraftsmanshipProps> = ({
           <div className="lg:col-span-6">
             <div className="relative rounded-2xl overflow-hidden border border-[#48391d] bg-[#171513] shadow-2xl">
               <img
-                src="/src/assets/images/bridal_choker_set_1791285138342.jpg"
+                src={JEWELLERY_IMAGES.choker}
                 alt="VK Jewellers Royal Wedding Bridal Jewelry Collection"
                 referrerPolicy="no-referrer"
                 className="w-full h-[400px] sm:h-[460px] object-cover object-center"

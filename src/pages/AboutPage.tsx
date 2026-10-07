@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { VKLogo } from '../components/VKLogo';
 import { ShieldCheck, Award, Heart, Sparkles, CheckCircle2, ArrowRight } from 'lucide-react';
-import { SHOWROOM_CONTACTS } from '../data/jewelleryData';
+import { SHOWROOM_CONTACTS, JEWELLERY_IMAGES } from '../data/jewelleryData';
 
 export const AboutPage: React.FC = () => {
   return (
@@ -63,7 +63,7 @@ export const AboutPage: React.FC = () => {
           <div className="lg:col-span-6">
             <div className="relative rounded-3xl overflow-hidden border border-[#48391d] bg-[#171513] shadow-2xl">
               <img
-                src="/src/assets/images/gold_bangles_kadas_1791285149226.jpg"
+                src={JEWELLERY_IMAGES.bangles}
                 alt="VK Jewellers 22K Handcrafted Gold Bangles"
                 referrerPolicy="no-referrer"
                 className="w-full h-96 object-cover object-center"

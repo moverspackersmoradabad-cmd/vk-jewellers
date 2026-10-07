@@ -1,3 +1,17 @@
+import heroBridalImg from '../assets/images/hero_bridal_jewellery_1791285116000.jpg';
+import necklaceImg from '../assets/images/gold_necklace_collection_1791285126320.jpg';
+import chokerImg from '../assets/images/bridal_choker_set_1791285138342.jpg';
+import banglesImg from '../assets/images/gold_bangles_kadas_1791285149226.jpg';
+import ringsImg from '../assets/images/diamond_gold_rings_1791285161704.jpg';
+
+export const JEWELLERY_IMAGES = {
+  heroBridal: heroBridalImg,
+  necklace: necklaceImg,
+  choker: chokerImg,
+  bangles: banglesImg,
+  rings: ringsImg,
+};
+
 export interface JewelleryItem {
   id: string;
   name: string;
@@ -30,7 +44,7 @@ export const JEWELLERY_PRODUCTS: JewelleryItem[] = [
     category: 'bridal',
     purity: '22K (916 BIS)',
     estimatedWeight: '68.50 grams',
-    image: '/src/assets/images/bridal_choker_set_1791285138342.jpg',
+    image: chokerImg,
     description: 'An opulent royal bridal masterpiece crafted in 22K gold featuring antique filigree work, uncut polki stones, deep Colombian emerald drops, and matching royal chandelier jhumkas.',
     features: ['100% BIS Hallmarked (HUID)', 'Comes with Matching Jhumkas & Maang Tikka', 'Custom sizing available for brides', 'Handcrafted by Master Karigars'],
     inStock: true,
@@ -44,7 +58,7 @@ export const JEWELLERY_PRODUCTS: JewelleryItem[] = [
     category: 'necklaces',
     purity: '22K (916 BIS)',
     estimatedWeight: '34.20 grams',
-    image: '/src/assets/images/gold_necklace_collection_1791285126320.jpg',
+    image: necklaceImg,
     description: 'Intricate traditional floral filigree gold necklace with delicate dangling beads. Designed for festive celebrations, weddings, and family milestones.',
     features: ['BIS 916 Hallmark certified', 'Smooth skin-comfort inner finish', 'Adjustable dori/gold chain loop', 'Complimentary velvet presentation box'],
     inStock: true,
@@ -58,7 +72,7 @@ export const JEWELLERY_PRODUCTS: JewelleryItem[] = [
     category: 'bangles',
     purity: '22K (916 BIS)',
     estimatedWeight: '46.80 grams (Pair)',
-    image: '/src/assets/images/gold_bangles_kadas_1791285149226.jpg',
+    image: banglesImg,
     description: 'Exquisite pair of traditional royal kadas embossed with majestic peacock and floral motifs. Fitted with a secure screw hinge for lifetime durability and comfort.',
     features: ['Pair of 2 heavy kadas', 'Secure invisible screw mechanism', 'Solid gold core construction', 'HUID hallmarked purity'],
     inStock: true,
@@ -72,7 +86,7 @@ export const JEWELLERY_PRODUCTS: JewelleryItem[] = [
     category: 'rings',
     purity: '18K Diamond',
     estimatedWeight: '6.40 grams',
-    image: '/src/assets/images/diamond_gold_rings_1791285161704.jpg',
+    image: ringsImg,
     description: 'Dazzling brilliant-cut solitaire ring set alongside ornate 18K yellow and rose gold cocktail rings. Ideal for engagements, anniversaries, and modern everyday luxury.',
     features: ['IGI Certified Natural Diamonds', 'VVS Clarity & EF Color grade', 'Comfort fit band design', 'Free lifetime cleaning & polish at Bisalpur showroom'],
     inStock: true,
@@ -86,7 +100,7 @@ export const JEWELLERY_PRODUCTS: JewelleryItem[] = [
     category: 'bridal',
     purity: 'Antique Gold 22K',
     estimatedWeight: '82.10 grams',
-    image: '/src/assets/images/hero_bridal_jewellery_1791285116000.jpg',
+    image: heroBridalImg,
     description: 'The pinnacle of wedding grandeur: handcrafted antique 22K gold choker featuring ruby accents, natural seed pearl tassels, and heritage temple embossing.',
     features: ['Complete bridal suite with matching earrings', 'Temple art embossed medallions', 'Adjustable luxury silk dori cord', 'Exclusive one-of-a-kind showroom edition'],
     inStock: true,
@@ -100,7 +114,7 @@ export const JEWELLERY_PRODUCTS: JewelleryItem[] = [
     category: 'necklaces',
     purity: '22K (916 BIS)',
     estimatedWeight: '12.80 grams',
-    image: '/src/assets/images/gold_necklace_collection_1791285126320.jpg',
+    image: necklaceImg,
     description: 'Subtle, lightweight 22K hallmarked gold rope chain paired with a modern geometric teardrop pendant for everyday elegance and office wear.',
     features: ['Durable daily wear rope link', 'High-polish anti-tarnish finish', 'BIS 916 Stamped', 'Ideal for gifting & festive surprises'],
     inStock: true,

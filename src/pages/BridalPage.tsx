@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { JEWELLERY_PRODUCTS, SHOWROOM_CONTACTS, JewelleryItem } from '../data/jewelleryData';
+import { JEWELLERY_PRODUCTS, SHOWROOM_CONTACTS, JewelleryItem, JEWELLERY_IMAGES } from '../data/jewelleryData';
 import { Sparkles, Heart, Eye, MessageCircle } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -53,7 +53,7 @@ export const BridalPage: React.FC<BridalPageProps> = ({
         >
           <div className="aspect-[16/9] sm:aspect-[21/9] relative overflow-hidden">
             <img
-              src="/src/assets/images/hero_bridal_jewellery_1791285116000.jpg"
+              src={JEWELLERY_IMAGES.heroBridal}
               alt="VK Jewellers Royal Bridal Suites"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"

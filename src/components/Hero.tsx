@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { VKLogo } from './VKLogo';
 import { Sparkles, MessageCircle, ShieldCheck, ArrowRight, Award } from 'lucide-react';
-import { SHOWROOM_CONTACTS } from '../data/jewelleryData';
+import { SHOWROOM_CONTACTS, JEWELLERY_IMAGES } from '../data/jewelleryData';
 import { motion } from 'motion/react';
 
 export const Hero: React.FC = () => {
@@ -134,7 +134,7 @@ export const Hero: React.FC = () => {
               <div className="relative rounded-2xl overflow-hidden border border-[#524121] bg-[#151413] shadow-2xl group shine-overlay">
                 <div className="aspect-[4/3] sm:aspect-[16/11] relative overflow-hidden">
                   <img
-                    src="/src/assets/images/hero_bridal_jewellery_1791285116000.jpg"
+                    src={JEWELLERY_IMAGES.heroBridal}
                     alt="VK Jewellers Royal Bridal Gold Choker and Earrings Set"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
