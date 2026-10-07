@@ -1,0 +1,6 @@
+{
+  "name": "VK Jewellers – Elegance That Lasts Forever",
+  "description": "Trusted destination for exquisite gold, bridal, diamond and everyday jewellery in Bisalpur. Located on Tehsil Road, Bisalpur. Phone: 9410215507, 9412482687.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

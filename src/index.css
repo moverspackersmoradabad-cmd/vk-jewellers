@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-playfair: 'Playfair Display', serif;
+    --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-jakarta);
+    background-color: #0c0d0e;
+    color: #f4efe6;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-editorial {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Gold gradient text helper */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f7dfa5 0%, #d4af37 50%, #aa771c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animated shimmering gold text */
+.text-gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    #cf9f38 0%,
+    #fae5b6 25%,
+    #ffffff 50%,
+    #fae5b6 75%,
+    #cf9f38 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gold-text-sweep 4s linear infinite;
+}
+
+@keyframes gold-text-sweep {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #e4be58 0%, #d4af37 50%, #9e7422 100%);
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.22);
+}
+
+/* Subtle gold glow */
+.gold-glow {
+  box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.18);
+}
+
+.gold-glow-intense {
+  box-shadow: 0 0 45px 0px rgba(212, 175, 55, 0.35);
+}
+
+/* Diagonal luxury light sheen on image card hover */
+.shine-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-overlay::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.03) 25%,
+    rgba(255, 240, 190, 0.35) 50%,
+    rgba(255, 255, 255, 0.03) 75%,
+    transparent 100%
+  );
+  transform: rotate(25deg);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.group:hover .shine-overlay::after,
+.shine-overlay:hover::after {
+  opacity: 1;
+  animation: shine-sweep-anim 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes shine-sweep-anim {
+  0% {
+    left: -80%;
+  }
+  100% {
+    left: 140%;
+  }
+}
+
+/* Subtle breathing glow */
+@keyframes breathing-gold {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.04);
+  }
+}
+
+.animate-breathing-gold {
+  animation: breathing-gold 4.5s ease-in-out infinite;
+}
+
+/* Floating micro-float animation */
+@keyframes micro-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-micro-float {
+  animation: micro-float 3.5s ease-in-out infinite;
+}
+
+/* Sparkle twinkle */
+@keyframes sparkle-twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.8) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+  }
+}
+
+.animate-sparkle {
+  animation: sparkle-twinkle 2.5s ease-in-out infinite;
+}
+
