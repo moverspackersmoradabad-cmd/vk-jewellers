@@ -8,8 +8,19 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig(() => {
+  // Determine base path:
+  // 1. Explicit VITE_BASE_PATH if provided
+  // 2. If building for GitHub Pages or inside GitHub Actions, use '/vk-jewellers/'
+  // 3. Otherwise default to './' (ideal for Hostinger public_html or custom domains)
+  const isGitHub =
+    process.env.GITHUB_PAGES === 'true' ||
+    process.env.GITHUB_ACTIONS === 'true' ||
+    Boolean(process.env.GITHUB_REPOSITORY && process.env.GITHUB_REPOSITORY.includes('vk-jewellers'));
+
+  const base = process.env.VITE_BASE_PATH || (isGitHub ? '/vk-jewellers/' : './');
+
   return {
-    base: './',
+    base,
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

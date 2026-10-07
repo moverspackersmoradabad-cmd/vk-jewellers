@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <circle cx="50" cy="50" r="48" fill="#141312" stroke="#d4af37" stroke-width="4"/>
+  <circle cx="50" cy="50" r="42" fill="#0d0d0e" stroke="#aa771c" stroke-width="1.5"/>
+  <polygon points="50,16 62,30 50,44 38,30" fill="#fffaf0" stroke="#d4af37" stroke-width="1.5"/>
+  <polygon points="50,22 54,26 50,30 46,26" fill="#38bdf8"/>
+  <text x="50" y="40" text-anchor="middle" fill="#b91c1c" font-family="serif" font-weight="900" font-size="10">VK</text>
+  <rect x="25" y="47" width="50" height="9" rx="3" fill="#d4af37"/>
+  <text x="50" y="54" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="5.5" letter-spacing="1">JEWELLERS</text>
+  <text x="50" y="75" text-anchor="middle" fill="#ffffff" font-family="serif" font-weight="800" font-size="19" letter-spacing="0.5">V.K.</text>
+  <text x="50" y="85" text-anchor="middle" fill="#e5c158" font-family="sans-serif" font-weight="700" font-size="6.5" letter-spacing="1.5">JEWELLERS</text>
+</svg>

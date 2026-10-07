@@ -36,6 +36,9 @@ jobs:
         run: npm ci || npm install
 
       - name: Build production bundle
+        env:
+          GITHUB_PAGES: 'true'
+          VITE_BASE_PATH: '/vk-jewellers/'
         run: npm run build
 
       - name: Setup GitHub Pages

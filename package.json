@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build && rm -rf docs && cp -r dist docs",
+    "build": "vite build",
+    "build:github": "GITHUB_PAGES=true vite build",
+    "build:hostinger": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "GITHUB_PAGES=true npm run build",
     "deploy": "gh-pages -d dist",
     "clean": "rm -rf dist docs server.js",
     "lint": "tsc --noEmit"
