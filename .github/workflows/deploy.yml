@@ -30,16 +30,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci || npm install
+        run: npm install
 
       - name: Build production bundle
         env:
           GITHUB_PAGES: 'true'
           VITE_BASE_PATH: '/vk-jewellers/'
-        run: npm run build
+        run: npm run build:github
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5

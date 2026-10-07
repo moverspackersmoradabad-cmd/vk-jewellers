@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
-    "build:github": "GITHUB_PAGES=true vite build",
+    "build:github": "vite build --base=/vk-jewellers/",
     "build:hostinger": "vite build",
     "preview": "vite preview",
-    "predeploy": "GITHUB_PAGES=true npm run build",
+    "predeploy": "npm run build:github",
     "deploy": "gh-pages -d dist",
     "clean": "rm -rf dist docs server.js",
     "lint": "tsc --noEmit"
@@ -33,7 +33,6 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "autoprefixer": "^10.4.21",
-    "esbuild": "^0.25.0",
     "gh-pages": "^6.3.0",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.21.0",
